@@ -1,0 +1,9 @@
+header {
+	background-color: #A9A9A9;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header-text {
+	margin: 0;
+	padding: 16px;
+}
