@@ -1,14 +1,13 @@
 import React from 'react'
-import AceEditor from 'react-ace'
 
-class InputEditor extends React.Component {
+class Chart extends React.Component {
 	render() {
 		return (
-			<div className='input_editor'>
-				<h1>Chart</h1>
+			<div className='chart'>
+				<h1>Chart under construction</h1>
 			</div>
 		)
 	}
 }
 
-export default InputEditor
+export default Chart
