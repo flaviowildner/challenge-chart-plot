@@ -75,7 +75,11 @@ class App extends Component {
 		super();
 		this.state = {
 			inputEditor: {
-				value: ""
+				value: `{type: 'start', timestamp: 0, select: ['min_response_time', 'max_response_time'], group: ['os', 'browser']}
+{ type: 'data', timestamp: 0, os: 'linux', browser: 'chrome', min_response_time: 1, max_response_time: 2 }
+{ type: 'data', timestamp: 0, os: 'win32', browser: 'chrome', min_response_time: 3, max_response_time: 6 }
+{ type: 'data', timestamp: 1, os: 'linux', browser: 'chrome', min_response_time: 4, max_response_time: 7 }
+{ type: 'data', timestamp: 1, os: 'win32', browser: 'chrome', min_response_time: 2, max_response_time: 5 }`
 			},
 			chart: {
 				//SPAN
