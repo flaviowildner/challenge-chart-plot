@@ -1,16 +1,28 @@
 footer {
-	background-color: black;
+	background-color: #A9A9A9;
 	padding: 28px;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
 
-.generate_chart {
-	background-color: #0151FF;
-	border: none;
+.generate_chart_btn {
+	background-color: #2255FF;
 	color: white;
-	height: 32px;
-	border-radius: 2px;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 12px 28px;
+	margin: 4px 2px;
+	transition: 0.1s;
+	border: none;
 	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.02, 1.02);
+		box-shadow: white 0px 0px 10px;
+	}
+
+	&:active{
+		transform: scale(0.98, 0.98);
+	}
 }

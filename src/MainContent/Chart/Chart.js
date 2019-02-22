@@ -1,10 +1,20 @@
 import React from 'react'
+import ReactChartkick, { LineChart } from 'react-chartkick'
+import { Chart as ChartLib } from 'chart.js'
+import './style.css'
+
+ReactChartkick.addAdapter(ChartLib);
 
 class Chart extends React.Component {
 	render() {
 		return (
 			<div className='chart'>
-				<h1>Chart under construction</h1>
+				<LineChart
+					data={this.props.data}
+					curve={false}
+					legend='right'
+					messages={{ empty: "No data" }}
+				/>
 			</div>
 		)
 	}
