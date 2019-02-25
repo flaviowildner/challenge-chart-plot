@@ -9,7 +9,7 @@ const chartPaddingBottom = 20;
 class SlidingPanels extends React.Component {
 	constructor(props) {
 		super(props);
-		
+
 		this.state = {
 			totalHeight: null,
 			editorHeight: null,
@@ -64,9 +64,16 @@ class SlidingPanels extends React.Component {
 		if (this.state.resizing === true) {
 			this.setState((prevState) => {
 				let variation = currentMousePositionY - prevState.pivot.mousePositionY
+				let newChartHeight = prevState.pivot.chartHeight - variation;
+				let newEditorHeight = prevState.pivot.editorHeight + variation;
+				if (newChartHeight < 0 || newEditorHeight < 0) {
+					return {
+
+					}
+				}
 				return {
-					chartHeight: prevState.pivot.chartHeight - variation,
-					editorHeight: prevState.pivot.editorHeight + variation
+					chartHeight: newChartHeight,
+					editorHeight: newEditorHeight,
 				}
 			});
 		}

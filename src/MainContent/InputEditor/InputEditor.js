@@ -10,6 +10,7 @@ class InputEditor extends React.Component {
 					width="100%"
 					height={this.props.height}
 					language="javascript"
+					font
 					theme="vs-dark"
 					value={this.props.value}
 					onChange={this.props.onChange}
