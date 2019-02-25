@@ -1,5 +1,5 @@
 import React from 'react'
-import SlidingPanels from '../SlidingPanels/SlidingPanels'
+import SlidingPanels from './SlidingPanels/SlidingPanels'
 import GenerateChartButton from '../GenerateChartButton/GenerateChartButton'
 import { generateChartState } from '../Util/InputParser'
 import './style.css'

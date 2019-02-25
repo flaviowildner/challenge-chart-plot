@@ -66,7 +66,7 @@ function generateChartState(inputEventsString) {
 					throw Error('Invalid event type')
 			}
 		}
-		//Dealing with huge amount of data
+		// Dealing with huge amount of data
 		/*
 		My solution was to take a sample of the data by defining the maximum number of points that a series can have. I set that number to 10.
 		In this way, it is possible to see more easily the long-term variation of the series. But in cases where it is necessary to see more detail

@@ -1,6 +1,6 @@
 import React from 'react'
-import InputEditor from '../MainContent/InputEditor/InputEditor';
-import Chart from '../MainContent/Chart/Chart'
+import InputEditor from './InputEditor/InputEditor';
+import Chart from './Chart/Chart'
 import './styles.css'
 
 const defaultChartHeight = 300;
@@ -81,7 +81,7 @@ class SlidingPanels extends React.Component {
 
 	render() {
 		return (
-			<div className='sliding_panels' ref={(divElement) => this.divElement = divElement}>
+			<div className='sliding_panels'>
 				<InputEditor onChange={this.props.onChangeInputEditor} onMouseDown={this.onMouseDown} height={this.state.editorHeight} value={this.props.inputEditorValue} />
 				<Chart data={this.props.chartData} height={this.state.chartHeight - chartPaddingBottom} />
 			</div>
