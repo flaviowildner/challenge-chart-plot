@@ -27,7 +27,6 @@ class MainContent extends React.Component {
 	}
 
 	onClickGenerateChart() {
-		//Improve error verification
 		let newChartState = generateChartState(this.state.inputEditor.value);
 		if (newChartState['errorMessage']) {
 			alert(newChartState['errorMessage'])

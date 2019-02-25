@@ -66,15 +66,7 @@ class SlidingPanels extends React.Component {
 				let variation = currentMousePositionY - prevState.pivot.mousePositionY
 				let newChartHeight = prevState.pivot.chartHeight - variation;
 				let newEditorHeight = prevState.pivot.editorHeight + variation;
-				if (newChartHeight < 0 || newEditorHeight < 0) {
-					return {
-
-					}
-				}
-				return {
-					chartHeight: newChartHeight,
-					editorHeight: newEditorHeight,
-				}
+				return (newChartHeight < 100 || newEditorHeight < 0) ? {} : { chartHeight: newChartHeight, editorHeight: newEditorHeight, };
 			});
 		}
 	}

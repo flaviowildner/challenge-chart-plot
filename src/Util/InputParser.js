@@ -1,5 +1,6 @@
 const MAX_POINTS_PER_SERIES = 10;
 
+// Parses the input into a json array
 function strToJson(str) {
 	var inputSplitted, inputParsed;
 	inputSplitted = str.split('\n'); // Split the entire input in lines of string json
@@ -28,7 +29,7 @@ function generateChartState(inputEventsString) {
 
 
 		if (indexLastStart === inputParsed.length) throw Error('There\'s no event of start type')
-		for (let i = indexLastStart; i < inputParsed.length; i++) {
+		for (let i = indexLastStart; i < inputParsed.length; i++) { // Starts reading events from the last start type event.
 			const currEvent = inputParsed[i];
 			const { type, timestamp } = currEvent;
 			if (timestamp < 0) throw Error('The timestamp of event should be greater than zero')
@@ -40,7 +41,6 @@ function generateChartState(inputEventsString) {
 					group = currEvent.group;
 					break;
 				case 'span':
-					//if (!currEvent.begin || currEvent.begin < 0) throw Error('The begin value should be equal or greater than 0')
 					if (!currEvent.begin && currEvent.begin !== 0) throw Error('Event of span type should have a begin timestamp')
 					if (!currEvent.end && currEvent.end !== 0) throw Error('Event of span type should have a end timestamp')
 					begin = currEvent.begin;

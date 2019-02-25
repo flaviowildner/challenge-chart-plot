@@ -1,3 +1,7 @@
+Deploy: (https://flavio-challenge-intelie.herokuapp.com/)
+
+----------------------------------
+
 # Plotting a chart
 
 In this challenge, you will implement a web application that plots a line chart based on some manually input data.
