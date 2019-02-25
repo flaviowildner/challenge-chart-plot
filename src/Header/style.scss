@@ -1,6 +1,10 @@
 header {
 	background-color: #A9A9A9;
 	font-family: 'Source Sans Pro', sans-serif;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
 }
 
 .header-text {

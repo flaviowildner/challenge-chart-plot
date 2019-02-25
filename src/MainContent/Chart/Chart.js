@@ -14,6 +14,8 @@ class Chart extends React.Component {
 					curve={false}
 					legend='right'
 					messages={{ empty: "No data" }}
+					height={this.props.height}
+					onChange={this.props.onChange}
 				/>
 			</div>
 		)

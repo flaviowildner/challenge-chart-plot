@@ -8,9 +8,10 @@
 		"concurrently": "^4.1.0",
 		"node-sass": "^4.11.0",
 		"react": "^16.8.2",
-		"react-ace": "^6.4.0",
+		"react-chartjs-2": "^2.7.4",
 		"react-chartkick": "^0.3.0",
 		"react-dom": "^16.8.2",
+		"react-monaco-editor": "^0.24.0",
 		"react-scripts": "2.1.5"
 	},
 	"scripts": {

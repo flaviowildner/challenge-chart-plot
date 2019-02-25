@@ -3,11 +3,11 @@ import './style.css'
 
 function Footer(props) {
 	return (
-		<footer>
+		<div className='generate_chart_div'>
 			<button className='generate_chart_btn' onClick={props.onClickGenerateChart} >
 				GENERATE CHART
 			</button>
-		</footer>
+		</div>
 	)
 }
 
